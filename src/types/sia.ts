@@ -27,6 +27,7 @@ export interface Conversation {
 }
 
 export interface SiaSettings {
+  agentId: string;
   voice: string;
   language: LanguageCode;
   personality: Personality;
@@ -37,7 +38,8 @@ export interface SiaSettings {
 }
 
 export const DEFAULT_SETTINGS: SiaSettings = {
-  voice: "alloy",
+  agentId: "leader",
+  voice: "coral",
   language: "pt-BR",
   personality: "natural",
   volume: 1,
